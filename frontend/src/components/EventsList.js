@@ -1,6 +1,9 @@
-import classes from './EventsList.module.css';
+import { useLoaderData } from "react-router-dom";
+import classes from "./EventsList.module.css";
 
 function EventsList({ events }) {
+  //const events = useLoaderData(); CAN GET LOADER DATA INSIDE THE CHILDREN PATHS
+
   return (
     <div className={classes.events}>
       <h1>All Events</h1>
